@@ -1,2 +1,3 @@
-# website
-Main repo of Shariari website
+<samp>
+  <h1>Website</h1>
+</samp>
