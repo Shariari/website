@@ -3,6 +3,11 @@ const session = require("express-session")
 const http = require("http")
 const path = require("path")
 
+const routes = require("./routes.js")
+
+/**
+ * Express init
+ */
 const app = express()
 const port = process.env.PORT || 3000
 
@@ -17,10 +22,14 @@ app.use(session({
   saveUninitialized: true
 }))
 
-export {
+// Use routes in web app
+app.use("/", routes)
+
+module.exports = {
   app
 }
 
+// Create server and listen in port 3000
 const server = http.createServer(app)
 server.listen(port, function () {
   console.clear(); console.log("[info] server is running in port %d", port)

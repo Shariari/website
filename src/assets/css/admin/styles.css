@@ -1,0 +1,67 @@
+@font-face {
+  font-family: vazir;
+  src: url("../../fonts/vazir/Vazir.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: cinema;
+  src: url("../../fonts/Cinema.woff");
+}
+
+* {
+  font-family: cinema;
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+  background-color: #c5c1c0;
+}
+
+/* Side bar */
+#admin-title {
+  font-size: 28px;
+  color: #f7cf3f;
+  margin-right: 20px;
+}
+
+.side-bar-items {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 5px 15px 40% 15px;
+  background-color: #1a2930;
+  border-radius: 10px;
+  margin: 7px 15px;
+}
+
+.side-bar-item {
+  padding: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #c5c1c0;
+  border-radius: 10px;
+  font-size: 21px;
+  margin-top: 10px;
+}
+
+.side-bar-item:hover {
+  background-color: #253942;
+}
+
+.side-bar-item > img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: -10px;
+  margin-left: 10px;
+}
+
+#made-by {
+  position: fixed;
+  bottom: 15px;
+  right: 40px;
+}
+
+#made-by > a {
+  color: #f7cf3f;
+}
